@@ -99,34 +99,37 @@ textarea {
 }
 
 /* ------------------------------------------------
-   Secondary/Link Buttons (Reply, Edit, etc.)
-   Smaller subtle red pills with white text
+   Secondary/Link Buttons (Reply, Pin, Edit, etc.)
+   Simple red text links with underline on hover
    ------------------------------------------------ */
 .button_kind_link,
 .C_G,
 .C_H {
-  background-color: rgb(220, 38, 38) !important;
-  color: #FFFFFF !important;
-  border: 1px solid #1A1A1A !important;
-  border-radius: 4px !important;
-  padding: 6px 12px !important;
-  font-size: 0.8rem !important;
-  transition: transform 0.1s ease, box-shadow 0.1s ease !important;
+  background: transparent !important;
+  color: rgb(220, 38, 38) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  font-size: inherit !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: none !important;
 }
 
 .button_kind_link:hover,
 .C_G:hover,
 .C_H:hover {
-  background-color: rgb(220, 38, 38) !important;
-  color: #FFFFFF !important;
-  transform: translate(-1px, -1px) !important;
-  box-shadow: 2px 2px 0 #1A1A1A !important;
+  background: transparent !important;
+  color: rgb(185, 28, 28) !important;
+  text-decoration: underline !important;
+  transform: none !important;
+  box-shadow: none !important;
 }
 
 .button_kind_link:active,
 .C_G:active,
 .C_H:active {
-  transform: translate(0, 0) !important;
+  transform: none !important;
   box-shadow: none !important;
 }
 
@@ -197,7 +200,7 @@ textarea {
 /* Send button - Red bg, White text, same style as Sign In */
 .comment-form__button_type_send {
   background: rgb(220, 38, 38) !important;
-  border: 1px solid #1A1A1A !important;
+  border: 2px solid #1A1A1A !important;
   border-radius: 6px !important;
   color: #FFFFFF !important;
   font-weight: 600 !important;
@@ -222,7 +225,7 @@ textarea {
 /* Preview button - White bg, Red text, same style as Sign In */
 .comment-form__button_type_preview {
   background: #FFFFFF !important;
-  border: 1px solid #1A1A1A !important;
+  border: 2px solid #1A1A1A !important;
   border-radius: 6px !important;
   color: rgb(220, 38, 38) !important;
   font-weight: 600 !important;
@@ -264,18 +267,23 @@ a:hover {
   color: rgb(185, 28, 28) !important;
 }
 
-/* RSS and markdown links */
+/* RSS and markdown links - simple text with underline on hover */
 .comment-form__rss-link,
 .comment-form__markdown-link,
 .comment-form__rss-dropdown__link {
   color: rgb(220, 38, 38) !important;
   font-weight: 600 !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
 }
 
 .comment-form__rss-link:hover,
 .comment-form__markdown-link:hover,
 .comment-form__rss-dropdown__link:hover {
   color: rgb(185, 28, 28) !important;
+  text-decoration: underline !important;
 }
 
 /* ------------------------------------------------
