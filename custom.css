@@ -197,18 +197,18 @@ textarea {
   background: #FFFFFF !important;
 }
 
-/* Send button - Red bg, White text, same style as Sign In */
+/* Send button - Red bg, White text, EXACT same style as Sign In */
 .comment-form__button_type_send {
   background: rgb(220, 38, 38) !important;
-  border: 2px solid #1A1A1A !important;
+  border: 1px solid #1A1A1A !important;
   border-radius: 6px !important;
   color: #FFFFFF !important;
   font-weight: 600 !important;
-  transition: transform 0.1s ease, box-shadow 0.1s ease !important;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease !important;
 }
 
 .comment-form__button_type_send:hover {
-  background: rgb(220, 38, 38) !important;
+  background: rgb(185, 28, 28) !important;
   transform: translate(-2px, -2px) !important;
   box-shadow: 3px 3px 0 #1A1A1A !important;
 }
@@ -222,14 +222,14 @@ textarea {
   box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.4) !important;
 }
 
-/* Preview button - White bg, Red text, same style as Sign In */
+/* Preview button - White bg, Red text, EXACT same style as Sign In (white variant) */
 .comment-form__button_type_preview {
   background: #FFFFFF !important;
-  border: 2px solid #1A1A1A !important;
+  border: 1px solid #1A1A1A !important;
   border-radius: 6px !important;
   color: rgb(220, 38, 38) !important;
   font-weight: 600 !important;
-  transition: transform 0.1s ease, box-shadow 0.1s ease !important;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease !important;
 }
 
 .comment-form__button_type_preview:hover {
