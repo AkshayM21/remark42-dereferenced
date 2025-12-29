@@ -3,8 +3,8 @@
    Soft Neobrutalism Design System
    ================================================ */
 
-/* Import IBM Plex Sans font */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+/* Import IBM Plex Sans and Literata fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Literata:wght@400;500;600;700&display=swap');
 
 /* ------------------------------------------------
    CSS Variables Override
@@ -145,19 +145,21 @@ textarea {
    ------------------------------------------------ */
 .comment-form {
   border-radius: 10px !important;
+  border: none !important;
+  background: #FFFFFF !important;
 }
 
 .comment-form_theme_light {
   background: #FFFFFF !important;
-  border-color: #E5E5E5 !important;
+  border: none !important;
 }
 
 .comment-form_theme_light .comment-form__actions {
-  background: #FAF8F5 !important;
+  background: #FFFFFF !important;
 }
 
 .comment-form_theme_light .comment-form__control-panel {
-  background-color: #FAF8F5 !important;
+  background-color: #FFFFFF !important;
 }
 
 .comment-form_theme_light .comment-form__field {
@@ -173,7 +175,7 @@ textarea {
 }
 
 .comment-form_theme_light .comment-form__preview-wrapper {
-  background: #FAF8F5 !important;
+  background: #FFFFFF !important;
 }
 
 /* Send button */
@@ -181,23 +183,46 @@ textarea {
   background: rgb(220, 38, 38) !important;
   border: 1px solid #1A1A1A !important;
   border-radius: 6px !important;
+  color: #FFFFFF !important;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease !important;
 }
 
-.comment-form__button_type_send:hover,
+.comment-form__button_type_send:hover {
+  background: rgb(185, 28, 28) !important;
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 3px 3px 0 #1A1A1A !important;
+}
+
+.comment-form__button_type_send:active {
+  transform: translate(0, 0) !important;
+  box-shadow: none !important;
+}
+
 .comment-form__button_type_send:focus {
   background: rgb(185, 28, 28) !important;
 }
 
 /* Preview button */
 .comment-form__button_type_preview {
+  background: #FFFFFF !important;
   border: 1px solid #1A1A1A !important;
   border-radius: 6px !important;
+  color: #1A1A1A !important;
+  transition: transform 0.1s ease, box-shadow 0.1s ease !important;
 }
 
-.comment-form__button_type_preview:hover,
+.comment-form__button_type_preview:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 3px 3px 0 #1A1A1A !important;
+}
+
+.comment-form__button_type_preview:active {
+  transform: translate(0, 0) !important;
+  box-shadow: none !important;
+}
+
 .comment-form__button_type_preview:focus {
-  box-shadow: inset 0 0 0 2px rgb(220, 38, 38) !important;
-  color: rgb(220, 38, 38) !important;
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.4) !important;
 }
 
 /* Toolbar icons */
@@ -307,6 +332,16 @@ a:hover {
   color: #1A1A1A !important;
 }
 
+/* Username styling - Literata font, black color */
+.comment__username,
+.auth-panel__username,
+.settings__username,
+.E_A {
+  font-family: 'Literata', Georgia, serif !important;
+  color: #1A1A1A !important;
+  font-weight: 600 !important;
+}
+
 /* Comment actions */
 .comment__action,
 .comment__action-link {
@@ -361,7 +396,7 @@ a:hover {
 }
 
 .root_theme_light .root__pinned-comments {
-  background: #FAF8F5 !important;
+  background: #FFFFFF !important;
 }
 
 /* Selection color */
